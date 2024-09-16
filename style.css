@@ -11,6 +11,7 @@
     --gray-400: #94a3b8;
     --gray-200: #e2e8f0;
     --purple: #7c3aed;
+    ---light-purple: #9763FF;
     --white: #fff;
 }
 
@@ -88,7 +89,7 @@ main {
     font-weight: 600;
 }
 
-.login a :hover {
+.login a:hover {
     text-decoration: underline;
 }
 
@@ -104,6 +105,12 @@ main {
     font-size: 1rem;
     font-weight: 700;
     color: var(--white);
+}
+
+.login button:hover {
+    background-color: var(---light-purple);
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .login > p {
@@ -144,10 +151,21 @@ main {
 
     .conteudo {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .bg-desktop {
         display: block;
         width: 100%;
+    }
+
+    .descricao h1 {
+        font-size: 2.25rem;
+    }
+
+    .descricao p {
+        font-size: 1rem;
     }
 }
